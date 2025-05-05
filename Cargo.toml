@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "pong",
+    "snake"
+]
+
+[workspace.dependencies]
+bevy = { version = "0.16", features = ["dynamic_linking"] }
+
+# Enable max optimizations for dependencies, but not for our code:
+[profile.dev.package."*"]
+opt-level = 3
+
+# Enable only a small amount of optimization in debug mode
+[profile.dev]
+opt-level = 1
