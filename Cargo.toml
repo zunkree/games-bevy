@@ -7,7 +7,7 @@ members = [
 ]
 
 [workspace.dependencies]
-bevy = { version = "0.16", features = ["dynamic_linking"] }
+bevy = { version = "0.17", features = ["dynamic_linking"] }
 
 # Enable max optimizations for dependencies, but not for our code:
 [profile.dev.package."*"]

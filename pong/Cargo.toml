@@ -5,3 +5,4 @@ edition = "2024"
 
 [dependencies]
 bevy = { workspace = true }
+avian2d = "0.4"
