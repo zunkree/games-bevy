@@ -394,7 +394,7 @@ fn move_ai(
 
 fn main() {
     App::new()
-        .add_plugins(DefaultPlugins)
+        .add_plugins((DefaultPlugins, PhysicsPlugins::default()))
         .insert_resource(Score { player: 0, ai: 0 })
         .add_systems(
             Startup,
