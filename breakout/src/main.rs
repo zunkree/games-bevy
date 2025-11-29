@@ -196,17 +196,7 @@ fn life_and_level_system() {}
 
 fn main() {
     App::new()
-        .add_plugins(DefaultPlugins {
-            bevy_window: WindowPlugin {
-                primary_window: Some(Window {
-                    title: "Breakout".to_string(),
-                    resolution: (WINDOW_WIDTH, WINDOW_HEIGHT).,
-                    ..default()
-                }),
-                ..default()
-            },
-            ..default()
-        })
+        .add_plugins(DefaultPlugins)
         .init_state::<GameState>()
         .insert_resource(Time::<Fixed>::from_seconds(1.0 / 120.0))
         .add_systems(Startup, spawn_camera)

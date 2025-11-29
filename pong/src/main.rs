@@ -1,5 +1,4 @@
 use bevy::prelude::*;
-use avian2d::prelude::*;
 
 use bevy::math::bounding::{Aabb2d, BoundingVolume, IntersectsVolume};
 
@@ -394,7 +393,7 @@ fn move_ai(
 
 fn main() {
     App::new()
-        .add_plugins((DefaultPlugins, PhysicsPlugins::default()))
+        .add_plugins(DefaultPlugins)
         .insert_resource(Score { player: 0, ai: 0 })
         .add_systems(
             Startup,
