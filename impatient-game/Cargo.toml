@@ -1,0 +1,10 @@
+[package]
+name = "impatient-game"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = { workspace = true }
+bevy_common_assets = { version = "0.14.0", features = ["ron"] }
+bevy_procedural_tilemaps = "0.1.3"
+serde = { version = "1.0.228", features = ["derive"] }
