@@ -1,5 +1,4 @@
 use bevy::prelude::*;
-use avian2d::prelude::*;
 
 use bevy::math::bounding::{Aabb2d, BoundingVolume, IntersectsVolume};
 
